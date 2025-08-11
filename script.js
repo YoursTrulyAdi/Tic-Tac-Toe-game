@@ -16,6 +16,9 @@ let playPlr = (element) =>{
 //event listener
 box.forEach(element => {
     element.addEventListener("click", () => {
-        playPlr(element);
+        if(!element.classList.contains("attempted-box")){
+            element.classList.toggle("attempted-box");
+            playPlr(element);
+        }
     })
 });
