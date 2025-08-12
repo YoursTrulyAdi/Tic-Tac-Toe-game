@@ -9,6 +9,7 @@
     --container-background: #7A85C1;
     --game-box-background: #3B38A0;
     --game-item-color: #B2B0E8;
+    --reset-btn-font-color: #ef5077;
 }
 
 body{
@@ -20,9 +21,6 @@ body{
 }
 
 .contain-main{
-    background-color: var(--container-background);
-    border-radius: 25px;
-    padding: 15px;
 }
 
 .contain-game{
@@ -30,6 +28,9 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+    background-color: var(--container-background);
+    border-radius: 25px;
+    padding: 15px;
 }
 
 .box{
@@ -42,5 +43,26 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 50px 0;
+}
+
+.btn button{
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    border-radius: 15px;
+    padding: 10px 15px;
+    color: var(--reset-btn-font-color);
+    background-color: var(--game-box-background);
     cursor: pointer;
 }
